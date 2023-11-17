@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aldertune</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+        }
+
+        header {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            padding: 0.5em;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding: 2em;
+        }
+
+        section {
+            flex: 1;
+            margin: 1em;
+            padding: 1em;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #1a1a1a;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aldertune</h1>
+    </header>
+
+    <nav>
+        <a href="#" onclick="loadPage('home')">Home</a>
+        <a href="#" onclick="loadPage('external')">External Links</a>
+        <a href="#" onclick="loadPage('download')">Download Files</a>
+        <a href="#" onclick="loadPage('lore')">Game Lore</a>
+    </nav>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Aldertune</h2>
+            <p>Explore the magical world inspired by Undertale and Deltarune.</p>
+        </section>
+
+        <section id="external" style="display: none;">
+            <h2>External Links</h2>
+            <p>Check out these external sites:</p>
+            <ul>
+                <li><a href="https://undertale.com" target="_blank">Undertale Official Site</a></li>
+                <li><a href="https://www.deltarune.com" target="_blank">Deltarune Official Site</a></li
