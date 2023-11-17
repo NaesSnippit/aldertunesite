@@ -8,12 +8,13 @@
         body {
             margin: 0;
             font-family: 'Arial', sans-serif;
-            background-color: #f0f0f0;
+            background-color: #000000;
+            color: #ffffff;
         }
 
         header {
-            background-color: #1a1a1a;
-            color: #fff;
+            background-color: #84357d;
+            color: #ffffff;
             text-align: center;
             padding: 1em;
         }
@@ -21,7 +22,7 @@
         nav {
             display: flex;
             justify-content: space-around;
-            background-color: #333;
+            background-color: #612c61;
             padding: 0.5em;
         }
 
@@ -36,19 +37,29 @@
             flex: 1;
             margin: 1em;
             padding: 1em;
-            background-color: #fff;
-            border: 1px solid #ddd;
+            background-color: #a349a4;
+            border: 1px solid #84357d;
             border-radius: 5px;
+            color: #ffffff;
         }
 
         footer {
-            background-color: #1a1a1a;
-            color: #fff;
+            background-color: #b962b9;
+            color: #ffffff;
             text-align: center;
             padding: 1em;
             position: fixed;
             bottom: 0;
             width: 100%;
+        }
+
+        a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -60,8 +71,8 @@
     <nav>
         <a href="#" onclick="loadPage('home')">Home</a>
         <a href="#" onclick="loadPage('external')">External Links</a>
-        <a href="#" onclick="loadPage('download')">Download Files</a>
-        <a href="#" onclick="loadPage('lore')">Game Lore</a>
+        <a href="#" onclick="loadPage('download')">Downloads</a>
+        <a href="#" onclick="loadPage('faqs')">FAQs</a>
     </nav>
 
     <main>
@@ -71,8 +82,44 @@
         </section>
 
         <section id="external" style="display: none;">
-            <h2>External Links</h2>
-            <p>Check out these external sites:</p>
+            <h2>Undertale and Deltarune</h2>
+            <p>The two tales that started it all:</p>
             <ul>
                 <li><a href="https://undertale.com" target="_blank">Undertale Official Site</a></li>
-                <li><a href="https://www.deltarune.com" target="_blank">Deltarune Official Site</a></li
+                <li><a href="https://www.deltarune.com" target="_blank">Deltarune Official Site</a></li>
+            </ul>
+        </section>
+
+        <section id="download" style="display: none;">
+            <h2>Downloadable Files</h2>
+            <p>Download the demo and more:</p>
+            <ul>
+                <li><a href="downloads/aldertune_artwork.zip" download>Artwork</a></li>
+                <li><a href="downloads/aldertune_soundtrack.mp3" download>Soundtrack</a></li>
+                <li><a href="downloads/aldertune_demo.zip" download>Demo</a></li>
+            </ul>
+        </section>
+
+        <section id="lore" style="display: none;">
+            <h2>Game Lore</h2>
+            <p>Discover the rich lore of Aldertune and its characters.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Aldertune</p>
+    </footer>
+
+    <script>
+        function loadPage(pageId) {
+            // Hide all sections
+            document.querySelectorAll('main section').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            document.getElementById(pageId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
