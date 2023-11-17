@@ -26,8 +26,8 @@ body {
 }
 
 body.dark-mode {
-    background-color: #F3E5AB;
-    color: #F3E5AB;
+    background-color: #F0EAD6;
+    color: #F0EAD6;
 }
 
 header {
@@ -35,7 +35,7 @@ header {
 }
 
 nav a:hover {
-    color: #F3E5AB;
+    color: #F0EAD6;
 }
 
 section:hover {
@@ -44,6 +44,6 @@ section:hover {
 }
 
 footer:hover {
-    background-color: #F3E5AB;
+    background-color: #F0EAD6;
 }
 /* Add more styles as needed */
