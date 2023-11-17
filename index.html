@@ -143,5 +143,38 @@
             document.getElementById(pageId).style.display = 'block';
         }
     </script>
+
+      <audio id="clickSound" src="click-sound.mp3"></audio>
+
+    <script>
+        function loadPage(pageId) {
+            // Hide all sections
+            document.querySelectorAll('main section').forEach(section => {
+                section.style.display = 'none';
+            });
+
+            // Show the selected section
+            document.getElementById(pageId).style.display = 'block';
+
+            // Play the click sound
+            playClickSound();
+        }
+
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+
+            // Play the click sound
+            playClickSound();
+        }
+
+        function playClickSound() {
+            // Get the audio element
+            const clickSound = document.getElementById('clickSound');
+
+            // Play the sound
+            clickSound.play();
+        }
+    </script>
+    
 </body>
 </html>
