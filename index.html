@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aldertune</title>
+     <button onclick="toggleDarkMode()">Toggle Light Mode</button>
       <link rel="stylesheet" href="style.css">
     <style>
         body {
@@ -68,7 +69,22 @@
     <header>
         <h1>Aldertune</h1>
     </header>
+    
+ <script>
+        function loadPage(pageId) {
+            // Hide all sections
+            document.querySelectorAll('main section').forEach(section => {
+                section.style.display = 'none';
+            });
 
+            // Show the selected section
+            document.getElementById(pageId).style.display = 'block';
+        }
+
+        function toggleDarkMode() {
+            document.body.classList.toggle('dark-mode');
+        }
+    </script>
     <nav>
         <a href="#" onclick="loadPage('home')">Home</a>
         <a href="#" onclick="loadPage('external')">Links</a>
