@@ -21,4 +21,29 @@ footer:hover {
     background-color: #a349a4;
 }
 
+body {
+    transition: background-color 0.5s;
+}
+
+body.dark-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+header {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav a:hover {
+    color: #b962b9;
+}
+
+section:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+footer:hover {
+    background-color: #a349a4;
+}
 /* Add more styles as needed */
