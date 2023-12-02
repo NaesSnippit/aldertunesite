@@ -5,6 +5,7 @@ The webpage to Aldertune and it's downloadable content.
 - (Oct 2023) Made initial designage
 - (Nov 2023) Added sound effect per-click
 - (Dec 2023) Patreon link/Link to Paypal
+- (Dec 2023) Effectively rickrolled early downloaders (added placeholder download buttons)
 
 ## Anticipated Add-Ons
 - (Dec 2023) Discord server invite link
