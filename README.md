@@ -4,10 +4,10 @@ The webpage to Aldertune and it's downloadable content.
 ## New Stuff
 - (Oct 2023) Made initial designage
 - (Nov 2023) Added sound effect per-click
+- (Dec 2023) Patreon link/Link to Paypal
 
 ## Anticipated Add-Ons
 - (Dec 2023) Discord server invite link
-- (Dec 2023) Patreon link/Link to Paypal
 - (Jan 2024) More cohesive site look
 - (March 2024) Aldertune Demo Video embed
 - (April 2024) Beta tester input in a misc page
