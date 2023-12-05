@@ -3,6 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <style>
+        /* Add your custom styles for the button here */
+        #customButton {
+            display: none;
+            padding: 10px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+    </style>
+    
     <title>Aldertune</title>
       <link rel="stylesheet" href="style.css">
     <link rel="icon" href="favicon.ico" type="image/x-icon"/>
@@ -183,6 +197,24 @@
             clickSound.play();
         }
     </script>
-    
+
+         <a href="#" id="customButton">Bork</a>
+
+         <script>
+        // JavaScript code to detect page refresh
+        let refreshCount = 0;
+
+        function checkRefresh() {
+            refreshCount++;
+
+            if (refreshCount >= 6) {
+                // Show the custom button if refresh count reaches 6
+                document.getElementById('customButton').style.display = 'inline-block';
+            }
+        }
+
+        // Attach the checkRefresh function to the window's onbeforeunload event
+        window.onbeforeunload = checkRefresh;
+    </script>
 </body>
 </html>
